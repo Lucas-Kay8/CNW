@@ -1,0 +1,10 @@
+.DS_Store
+.venv_pdf/
+node_modules/
+.ipynb_checkpoints/
+__pycache__/
+*.log
+.gemini/
+.claude-design/
+archive/
+*.pptx

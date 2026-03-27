@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>提示词核心——大学生全场景 AI 提效实操</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        /* Extra styles for specific slides if needed */
+        .text-huge { font-size: clamp(4rem, 10vw, 8rem); font-weight: 900; }
+        .text-large { font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 800; }
+        .text-medium { font-size: clamp(1.2rem, 3vw, 1.8rem); opacity: 0.9; }
+        .split-container { display: grid; grid-template-columns: 1fr 1fr; gap: 4vw; width: 100%; align-items: center; }
+        .vs-tag { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); font-size: 3rem; font-weight: 900; color: var(--accent); z-index: 20; background: #000; padding: 0.5rem 1rem; border-radius: 50%; border: 2px solid var(--accent); }
+    </style>
+</head>
+<body>
+    <div class="ppt-container">
+        
+        <!-- Slide 1: 封面页 -->
+        <section class="slide" id="slide-1">
+            <div class="slide-bg reveal-zoom" style="background-image: url('assets/images/slide_01_v2.png');"></div>
+            <div class="slide-overlay" style="background: radial-gradient(circle, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.8) 100%);"></div>
+            <div class="slide-content-overlay" style="justify-content: center; align-items: center; text-align: center;">
+                <div class="reveal-up delay-1">
+                    <h1 class="hero-title text-gradient" style="text-shadow: 0 10px 30px rgba(0,0,0,0.5);">怎么让 AI 讲“人话”？</h1>
+                    <p class="text-large" style="font-weight: 800; color: var(--accent); text-shadow: 0 5px 15px rgba(0,0,0,0.5);">从“人工智障”到“最强外脑”的实战心法</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 2: 灵魂拷问 -->
+        <section class="slide" id="slide-2">
+            <div class="slide-bg reveal-zoom" style="background-image: url('assets/images/slide_02.png');"></div>
+            <div class="slide-overlay" style="background: rgba(0,0,0,0.7);"></div>
+            <div class="slide-content-overlay" style="justify-content: center; align-items: center; text-align: center;">
+                <div class="reveal-up delay-1">
+                    <h1 class="text-huge">具有划时代意义？</h1>
+                    <p class="quote-line text-large accent-text" style="display: inline-block;">今晚，彻底终结这种尴尬</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 3: 真实惨案大赏 -->
+        <section class="slide" id="slide-3">
+            <div class="slide-bg reveal-zoom" style="background-image: url('assets/images/slide_03.png');"></div>
+            <div class="slide-overlay"></div>
+            <div class="slide-content-overlay">
+                <h1 class="reveal-up delay-1" style="border-left: 8px solid var(--accent); padding-left: 1.5rem; margin-bottom: 2rem;">
+                    那些年，我们被 AI 坑过的瞬间
+                </h1>
+                <div class="bento-grid">
+                    <div class="bento-card reveal-up delay-2">
+                        <h2 class="accent-text">客服腔</h2>
+                        <p>请假条写成行政通报，尴尬到抠脚</p>
+                    </div>
+                    <div class="bento-card reveal-up delay-3">
+                        <h2 class="accent-text">假大空</h2>
+                        <p>内容全是车轱辘话，毫无落地价值</p>
+                    </div>
+                    <div class="bento-card reveal-up delay-4">
+                        <h2 class="accent-text">胡编乱造</h2>
+                        <p>一本正经地捏造数据，自毁信誉</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 4: 认知升级 -->
+        <section class="slide" id="slide-4">
+            <div class="slide-bg reveal-zoom" style="background-image: url('assets/images/slide_04.png');"></div>
+            <div class="slide-overlay"></div>
+            <div class="slide-content-overlay" style="justify-content: center;">
+                <div class="reveal-up delay-1" style="max-width: 900px;">
+                    <h1 class="hero-title">它不是神</h1>
+                    <p class="text-large quote-line">只是一个<span class="accent-text">“欠调教”</span>的实习生</p>
+                    <p class="text-medium" style="margin-top: 2rem;">我们要剥掉它那层客套表象，把它内存里的干货一滴不剩地“榨”出来。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 5: 避坑指南 -->
+        <section class="slide" id="slide-5">
+            <div class="slide-bg reveal-zoom" style="background-image: url('assets/images/slide_05.png');"></div>
+            <div class="slide-overlay"></div>
+            <div class="slide-content-overlay">
+                <h1 class="reveal-up delay-1" style="margin-bottom: 5vh;">别把它当百度使</h1>
+                <div class="split-container" style="position: relative;">
+                    <div class="vs-tag">VS</div>
+                    <div class="bento-card reveal-up delay-2">
+                        <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">传统搜索</h2>
+                        <p class="text-large accent-text">在“找答案”</p>
+                        <p class="text-medium">翻旧账、搬运工</p>
+                    </div>
+                    <div class="bento-card reveal-up delay-3" style="border-color: var(--accent);">
+                        <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">AI 大模型</h2>
+                        <p class="text-large accent-text">在“赌可能”</p>
+                        <p class="text-medium">现编现织、生产工具</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 6: 其实它就是个“概率盲盒” -->
+        <section class="slide" id="slide-6">
+            <div class="slide-bg reveal-zoom" style="background-image: url('assets/images/slide_06.png');"></div>
+            <div class="slide-overlay" style="background: radial-gradient(circle, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.9) 80%);"></div>
+            <div class="slide-content-overlay" style="justify-content: center; align-items: center; text-align: center;">
+                <div class="reveal-up delay-1">
+                    <h1 class="hero-title">它不分对错</h1>
+                    <p class="text-huge accent-text">只管“概率接龙”</p>
+                    <p class="text-medium" style="margin-top: 2rem; max-width: 800px;">你的需求越模糊，它就越怂，只能回你一堆“多喝热水”这种永远不会出错的废话。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 7: 为什么你的指令总是得到废话？ -->
+        <section class="slide" id="slide-7">
+            <div class="slide-bg reveal-zoom" style="background-image: url('assets/images/slide_07.png');"></div>
+            <div class="slide-overlay"></div>
+            <div class="slide-content-overlay">
+                <h1 class="reveal-up delay-1">模糊输入 = 平庸产出</h1>
+                <div class="bento-card reveal-up delay-2" style="margin-top: 3rem; max-width: 800px;">
+                    <p class="text-large">“随便来点吃的”</p>
+                    <p class="text-huge accent-text">➔ 白菜汤</p>
+                    <hr style="margin: 2rem 0; opacity: 0.2;">
+                    <p class="text-large">“我要回锅肉，要辣，不要葱！”</p>
+                    <p class="text-huge accent-text">➔ 王炸答案</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 8: 提示词的核心奥秘 -->
+        <section class="slide" id="slide-8">
+            <div class="slide-bg reveal-zoom" style="background-image: url('assets/images/slide_08.png');"></div>
+            <div class="slide-overlay"></div>
+            <div class="slide-content-overlay" style="justify-content: flex-end; padding-bottom: 15vh;">
+                <div class="reveal-up delay-1" style="max-width: 800px;">
+                    <h1 class="hero-title">你不是在“下命令”</h1>
+                    <p class="text-large quote-line">你是在<span class="accent-text">“定边界”</span></p>
+                    <p class="text-medium" style="margin-top: 2rem;">每多一个条件，就是帮它砍掉一万个错误分支，把它的狗头“按”在正确的那条路上。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 9: 为什么正常聊天对 AI 无效？ -->
+        <section class="slide" id="slide-9">
+            <section class="slide-bg reveal-zoom" style="background: #111;"></section>
+            <div class="slide-overlay"></div>
+            <div class="slide-content-overlay" style="justify-content: center; align-items: center;">
+                <div class="split-container" style="text-align: center;">
+                    <div class="reveal-up delay-1">
+                        <p class="text-medium">人类沟通</p>
+                        <h2 class="text-huge">靠“默契”</h2>
+                        <p class="accent-text">充满潜台词</p>
+                    </div>
+                    <div class="reveal-up delay-2">
+                        <p class="text-medium">AI 沟通</p>
+                        <h2 class="text-huge accent-text">靠“全坦白”</h2>
+                        <p>拒绝脑补，只要实话</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 11: 警惕“注意力稀释” -->
+        <section class="slide" id="slide-11">
+            <div class="slide-bg reveal-zoom" style="background-image: url('assets/images/slide_11.png');"></div>
+            <div class="slide-overlay"></div>
+            <div class="slide-content-overlay">
+                <div class="reveal-up delay-1">
+                    <h1 class="hero-title">警惕<span class="accent-text">“注意力稀释”</span></h1>
+                    <p class="text-large quote-line">别以为写得多就是好，AI 也会“走神”</p>
+                </div>
+                <div class="bento-card reveal-up delay-2" style="margin-top: 5vh; max-width: 700px;">
+                    <h3 class="accent-text">核心原则</h3>
+                    <p class="text-medium">最关键、必须要执行的死命令，永远放在提示词的<strong class="accent-text">开头</strong>或者<strong class="accent-text">结尾</strong>！</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 12: 识破“幻觉”的诡计 -->
+        <section class="slide" id="slide-12">
+            <div class="slide-bg reveal-zoom" style="background-image: url('assets/images/slide_12.png');"></div>
+            <div class="slide-overlay"></div>
+            <div class="slide-content-overlay" style="align-items: flex-end; text-align: right;">
+                <div class="reveal-up delay-1">
+                    <h1 class="hero-title" style="border-left: none; border-right: 8px solid var(--accent); padding-right: 1.5rem;">识破“幻觉”</h1>
+                    <p class="text-large">为什么它会一本正经地胡说八道？</p>
+                </div>
+                <div class="bento-card reveal-up delay-2" style="margin-top: 5vh; max-width: 600px;">
+                    <p>本质是概率接龙的任务优先级高于事实。别给它设那自相矛盾、没法完成的套儿。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 13: 绝杀技巧三：角色扮演 -->
+        <section class="slide" id="slide-13">
+            <div class="slide-bg reveal-zoom" style="background-image: url('assets/images/slide_13.png');"></div>
+            <div class="slide-overlay" style="background: linear-gradient(0deg, rgba(0,0,0,0.9) 0%, transparent 100%);"></div>
+            <div class="slide-content-overlay" style="justify-content: flex-end; align-items: center; text-align: center;">
+                <div class="reveal-up delay-1">
+                    <h1 class="text-huge">让它扮演专家</h1>
+                    <p class="text-large accent-text">不是在玩 Cosplay</p>
+                    <p class="text-medium" style="margin-top: 2rem;">而是在物理层面，强行把它的思维锁死在“精英语料库”这一端。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 14: 我们需要一个“防坑脚手架” -->
+        <section class="slide" id="slide-14">
+            <div class="slide-bg reveal-zoom" style="background-image: url('assets/images/slide_14.png');"></div>
+            <div class="slide-overlay"></div>
+            <div class="slide-content-overlay" style="justify-content: center;">
+                <div class="reveal-up delay-1">
+                    <h1 class="hero-title">告别“凭感觉”</h1>
+                    <h1 class="hero-title accent-text">拥抱“结构化”</h1>
+                    <p class="text-large" style="margin-top: 2rem;">接下来，就是见证真正的终极杀手锏的时候了。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 15: BROKE 框架全景图 -->
+        <section class="slide" id="slide-15">
+            <div class="slide-bg reveal-zoom" style="background-image: url('assets/images/slide_15.png');"></div>
+            <div class="slide-overlay"></div>
+            <div class="slide-content-overlay">
+                <h1 class="reveal-up delay-1">BROKE 框架：一套硬核清单</h1>
+                <div class="bento-grid">
+                    <div class="bento-card reveal-up delay-1">
+                        <h2 class="accent-text">B</h2>
+                        <p>Background (背景)</p>
+                    </div>
+                    <div class="bento-card reveal-up delay-2">
+                        <h2 class="accent-text">R</h2>
+                        <p>Role (角色)</p>
+                    </div>
+                    <div class="bento-card reveal-up delay-3">
+                        <h2 class="accent-text">O</h2>
+                        <p>Objective (目标)</p>
+                    </div>
+                    <div class="bento-card reveal-up delay-4">
+                        <h2 class="accent-text">K</h2>
+                        <p>Key Results (红线)</p>
+                    </div>
+                    <div class="bento-card reveal-up delay-5">
+                        <h2 class="accent-text">E</h2>
+                        <p>Evolve (进化)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 16: 【真实翻车】令人绝望的拍脑袋指令 -->
+        <section class="slide" id="slide-16">
+            <div class="slide-bg reveal-zoom" style="background-image: url('assets/images/slide_16.png'); opacity: 0.4;"></div>
+            <div class="slide-overlay"></div>
+            <div class="slide-content-overlay">
+                <h1 class="reveal-up delay-1">翻车现场：拍脑袋指令</h1>
+                <div class="split-container" style="margin-top: 5vh;">
+                    <div class="bento-card reveal-up delay-2">
+                        <h3 class="accent-text">你的指令</h3>
+                        <p class="text-large">“写个电商市场分析报告。”</p>
+                    </div>
+                    <div class="bento-card reveal-up delay-3">
+                        <h3 style="color: grey;">AI 产出</h3>
+                        <p class="text-large" style="color: grey;">“宏观向好、机遇挑战、协同创新...”</p>
+                        <p style="margin-top: 1rem; color: #ff4444;">➔ 毫无价值的废纸</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 17: 【B+R】给 AI 定位坐标与身份 -->
+        <section class="slide" id="slide-17">
+            <div class="slide-bg reveal-zoom" style="background-image: url('assets/images/slide_17.png');"></div>
+            <div class="slide-overlay"></div>
+            <div class="slide-content-overlay">
+                <h1 class="reveal-up delay-1">第一步：定位坐标与身份</h1>
+                <div class="bento-grid" style="grid-template-columns: 1fr 1.5fr;">
+                    <div class="bento-card reveal-up delay-2" style="border-left: 10px solid var(--accent);">
+                        <h2 class="accent-text">B (Background)</h2>
+                        <p>新品牌，预算仅 20 万</p>
+                    </div>
+                    <div class="bento-card reveal-up delay-3">
+                        <h2 class="accent-text">R (Role)</h2>
+                        <p>逻辑严丝合缝的麦肯锡分析师</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 18: 【O+K】划定靶心，拉响红线 -->
+        <section class="slide" id="slide-18">
+            <div class="slide-bg reveal-zoom" style="background-image: url('assets/images/slide_18.png');"></div>
+            <div class="slide-overlay"></div>
+            <div class="slide-content-overlay">
+                <h1 class="reveal-up delay-1">第二步：锁定靶心，拉响红线</h1>
+                <div class="bento-grid">
+                    <div class="bento-card reveal-up delay-2">
+                        <h2 class="accent-text">O (Objective)</h2>
+                        <p>只要 3 个具体的低成本爆破点</p>
+                    </div>
+                    <div class="bento-card reveal-up delay-3" style="border: 2px solid #ff4444;">
+                        <h2 style="color: #ff4444;">K (Constraints)</h2>
+                        <p>严禁使用任何四字黑话！必须出矩阵表格。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 19: 奇迹时刻 -->
+        <section class="slide" id="slide-19">
+            <div class="slide-bg reveal-zoom" style="background-image: url('assets/images/slide_19.png');"></div>
+            <div class="slide-overlay"></div>
+            <div class="slide-content-overlay" style="justify-content: center; align-items: center; text-align: center;">
+                <div class="reveal-up delay-1">
+                    <h1 class="text-huge">奇迹时刻</h1>
+                    <p class="text-large">指令一变，<span class="accent-text">草台班子变顶级幕僚</span></p>
+                    <div class="bento-card" style="margin-top: 3rem; text-align: left; background: rgba(0,0,0,0.8);">
+                        <p class="accent-text">➔ 精准矩阵表已生成</p>
+                        <p class="accent-text">➔ 低成本避雷方案就绪</p>
+                        <p class="accent-text">➔ 业务逻辑全线拉满</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 21: 终极 PK -->
+        <section class="slide" id="slide-21">
+            <div class="slide-bg reveal-zoom" style="background-image: url('assets/images/slide_21.png');"></div>
+            <div class="slide-overlay"></div>
+            <div class="slide-content-overlay" style="justify-content: center;">
+                <h1 class="reveal-up delay-1">终极 PK：平庸 vs 绝杀</h1>
+                <div class="split-container" style="margin-top: 5vh;">
+                    <div class="bento-card reveal-up delay-2">
+                        <p class="text-medium" style="color: grey;">【平庸派】</p>
+                        <p>只给地点人数</p>
+                        <h3 style="color: grey;">➔ 流水账</h3>
+                    </div>
+                    <div class="bento-card reveal-up delay-3" style="border-color: var(--accent);">
+                        <p class="text-medium accent-text">【BROKE 派】</p>
+                        <p>定死背景、目标与红线</p>
+                        <h3 class="accent-text">➔ 王炸方案</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 22: 认知陷阱 -->
+        <section class="slide" id="slide-22">
+            <div class="slide-bg reveal-zoom" style="background-image: url('assets/images/slide_22.png');"></div>
+            <div class="slide-overlay"></div>
+            <div class="slide-content-overlay">
+                <div class="reveal-up delay-1">
+                    <h1 class="hero-title">认知陷阱</h1>
+                    <p class="text-large">别指望<span class="accent-text">“一键成片”</span></p>
+                </div>
+                <div class="bento-card reveal-up delay-2" style="margin-top: 5vh; max-width: 800px;">
+                    <p class="text-medium">想要一口气写完“调研+大纲+文案+排版”？</p>
+                    <p class="accent-text" style="font-weight: 800; font-size: 2rem;">必翻车！</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 23: 架构师思维 -->
+        <section class="slide" id="slide-23">
+            <div class="slide-bg reveal-zoom" style="background-image: url('assets/images/slide_23.png');"></div>
+            <div class="slide-overlay"></div>
+            <div class="slide-content-overlay" style="justify-content: flex-end; align-items: flex-end; text-align: right;">
+                <div class="reveal-up delay-1">
+                    <h1 class="hero-title" style="border-left: none; border-right: 8px solid var(--accent); padding-right: 1.5rem;">架构师思维</h1>
+                    <p class="text-large">设计你的专用<span class="accent-text">“流水线”</span></p>
+                </div>
+                <div class="bento-card reveal-up delay-2" style="margin-top: 3rem; background: rgba(0,0,0,0.8);">
+                    <p>告别单点提词，开启多节点协作模式</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 24: 实战拆解：工作流 -->
+        <section class="slide" id="slide-24">
+            <div class="slide-bg reveal-zoom" style="background-image: url('assets/images/slide_24.png');"></div>
+            <div class="slide-overlay"></div>
+            <div class="slide-content-overlay">
+                <h1 class="reveal-up delay-1">爆款报告的“装配线”</h1>
+                <div class="bento-grid">
+                    <div class="bento-card reveal-up delay-1">
+                        <h3 class="accent-text">Step 1</h3>
+                        <p>风格拆解</p>
+                    </div>
+                    <div class="bento-card reveal-up delay-2">
+                        <h3 class="accent-text">Step 2</h3>
+                        <p>逻辑骨架</p>
+                    </div>
+                    <div class="bento-card reveal-up delay-3">
+                        <h3 class="accent-text">Step 3</h3>
+                        <p>逐段填肉</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 25: 终极定位 -->
+        <section class="slide" id="slide-25">
+            <div class="slide-bg reveal-zoom" style="background-image: url('assets/images/slide_25.png');"></div>
+            <div class="slide-overlay"></div>
+            <div class="slide-content-overlay" style="justify-content: center; align-items: center; text-align: center;">
+                <div class="reveal-up delay-1">
+                    <h1 class="text-huge">做“总调度师”</h1>
+                    <p class="text-large">不做“搬运工”</p>
+                    <p class="text-medium accent-text" style="margin-top: 2rem;">你的核心护城河，是把业务拆碎的能力。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 26: 致命大坑：讨好型人格 -->
+        <section class="slide" id="slide-26">
+            <div class="slide-bg reveal-zoom" style="background-image: url('assets/images/slide_26.png');"></div>
+            <div class="slide-overlay"></div>
+            <div class="slide-content-overlay">
+                <div class="reveal-up delay-1">
+                    <h1 class="hero-title">致命大坑</h1>
+                    <p class="text-large">AI 的<span class="accent-text">“讨好型人格”</span></p>
+                </div>
+                <div class="bento-card reveal-up delay-2" style="margin-top: 3rem; max-width: 800px; border: 2px solid #ff4444;">
+                    <p class="text-large" style="color: #ff4444;">AI 的客套话，一个字都别信！</p>
+                    <p>它的家教就是“懂礼貌”，你发烂方案它也会说好。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 27: “红蓝对抗” -->
+        <section class="slide" id="slide-27">
+            <div class="slide-bg reveal-zoom" style="background-image: url('assets/images/slide_27.png');"></div>
+            <div class="slide-overlay" style="background: linear-gradient(90deg, rgba(0,0,255,0.3) 0%, rgba(255,0,0,0.3) 100%);"></div>
+            <div class="slide-content-overlay" style="justify-content: center;">
+                <h1 class="reveal-up delay-1">“红蓝对抗”：最强反派</h1>
+                <div class="split-container" style="margin-top: 5vh;">
+                    <div class="bento-card reveal-up delay-2" style="border-color: #008aff;">
+                        <h3 style="color: #008aff;">蓝方：你的方案</h3>
+                        <p>自信满满的初稿</p>
+                    </div>
+                    <div class="bento-card reveal-up delay-3" style="border-color: #ff4444;">
+                        <h3 style="color: #ff4444;">红方：挑刺专家</h3>
+                        <p>“鸡蛋里挑骨头”的毒舌审计</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 28: 学长私藏工具箱 -->
+        <section class="slide" id="slide-28">
+            <div class="slide-bg reveal-zoom" style="background-image: url('assets/images/slide_28.png');"></div>
+            <div class="slide-overlay"></div>
+            <div class="slide-content-overlay">
+                <h1 class="reveal-up delay-1">私藏工具箱</h1>
+                <div class="bento-grid">
+                    <div class="bento-card reveal-up delay-1">
+                        <h2 class="accent-text">秘塔 (Metaso)</h2>
+                        <p>深度搜寻，拒绝编剧</p>
+                    </div>
+                    <div class="bento-card reveal-up delay-2">
+                        <h2 class="accent-text">Kimi</h2>
+                        <p>超长读本，稳如泰神</p>
+                    </div>
+                    <div class="bento-card reveal-up delay-3">
+                        <h2 class="accent-text">DeepSeek</h2>
+                        <p>国产战神，逻辑之王</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 29: 忘掉公式 -->
+        <section class="slide" id="slide-29">
+            <div class="slide-bg reveal-zoom" style="background-image: url('assets/images/slide_29.png'); opacity: 0.3;"></div>
+            <div class="slide-overlay"></div>
+            <div class="slide-content-overlay" style="justify-content: center; align-items: center; text-align: center;">
+                <div class="reveal-up delay-1">
+                    <h1 class="text-huge">忘掉公式</h1>
+                    <p class="text-large accent-text">带走这三条“肌肉记忆”</p>
+                    <div class="reveal-up delay-2" style="margin-top: 3rem; text-align: left; font-size: 1.5rem; line-height: 2;">
+                        <p>1. 别把 AI 当神，当成干活的“嘴替”</p>
+                        <p>2. 提要求一定要带点你个人的偏见</p>
+                        <p>3. 好方案都是“吵”出来的</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 30: 散会！ -->
+        <section class="slide" id="slide-30">
+            <div class="slide-bg reveal-zoom" style="background-image: url('assets/images/slide_30.png');"></div>
+            <div class="slide-overlay"></div>
+            <div class="slide-content-overlay" style="justify-content: center; align-items: center; text-align: center;">
+                <div class="reveal-up delay-1">
+                    <h1 class="hero-title text-huge accent-text">散会！</h1>
+                    <p class="text-large">去真实世界<span class="accent-text">“练摊”</span></p>
+                    <div class="bento-card" style="margin-top: 5vh; border: 2px solid var(--accent);">
+                        <p class="text-large">作业：用 <span class="accent-text">BROKE</span> 框架对简历进行“毒舌洗礼”</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
