@@ -182,3 +182,31 @@ h1.hero-title {
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+/* Buzzword Rain Animation for Slide 2 */
+.buzzword-rain {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.buzzword-rain span {
+    position: absolute;
+    font-size: clamp(1.2rem, 3vw, 2.5rem);
+    font-weight: 800;
+    color: rgba(255, 255, 255, 0.15);
+    white-space: nowrap;
+    filter: blur(1px);
+    animation: floatDebris 8s infinite ease-in-out;
+}
+
+@keyframes floatDebris {
+    0%, 100% { transform: translate(0, 0) rotate(0deg); opacity: 0.1; }
+    50% { transform: translate(20px, -30px) rotate(5deg); opacity: 0.3; filter: blur(0px); }
+}
+
+.slide.active .buzzword-rain span {
+    animation-play-state: running;
+}
