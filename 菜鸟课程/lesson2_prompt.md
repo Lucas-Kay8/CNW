@@ -12,30 +12,33 @@
 ### Slide 1: 封面页
 
 - **布局**：极简高对比，视觉上要有一种“认知冲突”的冲击感。
-- **标题**：怎么让 AI 讲“人话”？
-- **副标题**：从“人工智障”到“最强外脑”的实战心法。
+- **标题**：告别“人工智障”：让 AI 成为你的最强外脑
+- **副标题**：提示词核心：开启大语言模型时代的进阶心法。
 - **视觉设计**：深色科技感背景，大气简约。使用径向渐变遮罩压暗边缘，文字采用白橙渐变并辅以落款阴影。
 ![封面页背景](assets/images/slide_01_v2.png)
 - **逐字稿**："各位同学，这堂课我们就帮大家解决目前多数人都在头疼的问题——怎么把那个只会回废话的 AI，真正驯化成你的最强外脑？"
 
 ### Slide 2: 灵魂拷问
 
-- **布局**：视觉压迫式布局，满屏浮动的“AI 废话”碎片。
+- **布局**：视觉压迫式布局，满屏浮动的“AI 废话”与“拒答咒语”。
 - **背景图片**：[Digital Chaos on Unsplash](https://unsplash.com/photos/Zm7wMCGjzD8) (已配置)
-- **标题**：被 AI “气”出过内伤吗？
-- **子标题**：拒做一份一眼假的 “AI 搬运工”
-- **内容设计**：利用 CSS 动画实现满屏乱飞的官腔词汇，标题居中突显，底部落款“彻底终结这种尴尬”。
-- **逐字稿**："讲真话，谁还没被那个对话框气出内伤过？你满怀期待让它写个活动方案，结果它给你吐出一堆‘具有划时代意义’、‘浓墨重彩的一笔’。你敢把这东西发给学长、发给导员？人家一眼就把你标为‘AI 搬运工’。这种尴尬，今晚咱们彻底终结它。"
+- **标题**：它是“最强外脑”，还是“平庸之徒”？
+- **子标题**：1% 极致提效，99% 还在跟废话较劲。
+- **内容设计**：利用 CSS 动画实现满屏乱飞的典型 AI 废话（如“作为 AI 语言模型”、“具有划时代意义”等）。标题居中加粗，采用高对比色，底部落款“今晚，彻底终结这种尴尬”。
+- **逐字稿**："大家晚上好。第一节课我们聊了 AI 发展得有多快、多伟大。但讲真，你们中间肯定有人心里在嘀咕：‘这玩意儿真的好用吗？我怎么觉得它给的东西平庸得要命？’。我想问问，有多少人被那个对话框气出过内伤？你满怀期待让它写个活动方案，结果它给你吐出一堆‘具有划时代意义’、‘浓墨重彩的一笔’这种没味儿的官腔；要么就回你句‘作为大语言模型，我无法...’。有人觉得它是改变世界的‘神器’，但更多初学者经历的是‘一眼假’的尴尬。今晚，我们不吹牛，我们只解决这一个问题：怎么让这个‘平庸’的 AI，真正变成你的‘最强外脑’。"
 
 ### Slide 3: 真实惨案大赏
 
-- **布局**：三栏式错落卡片，展示“翻车”瞬间。
+- **布局**：展示“翻车”瞬间。
 - **标题**：那些年，我们被 AI 坑过的瞬间
-- **内容**：客服腔（请假条写成行政通报）、假大空（论文提纲全是车轱辘话）、胡编乱造（一本正经地捏造数据）。
-- **配图提示词**：A polished 3D illustration of three glowing floating glassmorphism UI cards showcasing AI chat failure scenarios. The cards distinctly feature the Chinese text headers: "客服腔", "假大空", and "胡编乱造". The cards have red warning icons and error symbols on them. Bright colorful neon pastel background (peach, lavender, cyan), isometric perspective, high-end modern tech design.
-- **配图**：三张发光的 UI 半透明卡片，血淋淋地标记出三大常见翻车场景。
-![三大惨案](file:///Users/lucas/.gemini/antigravity/brain/00a498b0-7e8a-4ed9-9c6f-711b1b115bc4/lesson2_slide_03_fails_cards_png_1774017435274.png)
-- **逐字稿**："这种惨案我见得太多了。最夸张的一位，写个请假条，AI 把它写成了‘联合声明’。真的，这不是 AI 脑子不好使，是你根本没把它‘喂’对路。"
+- **内容**：
+    1. **一眼假“塑料感”**：求职邮件堆砌“底层逻辑、赋能、闭环迭代”，这种机械的“套路”一眼就会被 HR 识破。
+    2. **论文界“水货多”**：绕了五千字愣是没产出一句有用的结论，除了“意义重大”一无所有。
+    3. **睁眼编“幻觉症”**：最高级别的尴尬，是 AI 脸不红心不跳地给你现编了一个“诺奖级”参考文献。
+- **配图提示词**：A premium, high-end 4K digital background. Minimalism, deep space aesthetic. Dark charcoal and deep midnight blue tones. Subtle glowing light aura from the bottom. Very fine grid-pattern dots or a soft digital gradient texture. NO TEXT, NO BUSY ELEMENTS. The style should be reminiscent of Apple's recent software event backgrounds. Sophisticated, calm, and high-contrast for white text.
+- **配图**：一张深邃、极简的高级背景图，通过大面积留白衬托出三个“惨案”案例。
+![三大惨案](file:///Users/lucas/Work/AntiGravity/AI管理师/PPT/lesson2/assets/images/slide_03.png)
+- **逐字稿**："大家请看屏幕。为了让大家感悟得更深，我专门模拟了三个最典型的‘翻车’现场。第一个，很多同学想用 AI 帮自己写求职邮件，结果写出来全是‘底层逻辑、赋能、颗粒度’这种黑话，AI 味儿重到让 HR 瞬间想拉黑。第二个，论文摘要，绕了半天都在‘构筑桥梁’，一丁点实验干货都没有。最离谱的是第三个，它一本正经地给你编造了一本哈佛出版社明年才出的书。这种尴尬的本质只有一点：你把它当成了‘神’，却忘了它只是个需要你给指令、给边界的‘超级工具’。"
 
 ### Slide 4: 认知升级：剥掉 AI 的“全知”假面
 
