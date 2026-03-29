@@ -118,34 +118,86 @@
 
         <!-- Slide 4: 逻辑重塑 -->
         <section class="slide" id="4">
-            <div class="slide-bg reveal-zoom" style="background-image: url('assets/images/slide_04_logic_v2.png');"></div>
-            <div class="slide-overlay u-overlay-bokeh" style="backdrop-filter: blur(2px) brightness(0.85); -webkit-backdrop-filter: blur(2px) brightness(0.85);"></div>
+            <div class="slide-bg reveal-zoom" style="background-image: url('assets/images/slide_04_logic_v2.png');">
+            </div>
+            <div class="slide-overlay u-overlay-bokeh"
+                style="backdrop-filter: blur(2px) brightness(0.85); -webkit-backdrop-filter: blur(2px) brightness(0.85);">
+            </div>
             <div class="slide-content-overlay" style="justify-content: center;">
                 <div class="reveal-up delay-1" style="max-width: 1000px; text-align: left;">
                     <h1 class="t-hero-impact">归因分析：为什么博学的它，<br>会沦为“废话专家”？</h1>
-                    <p class="t-subtitle quote-line v-gap-hero">它不是不好用，只是你还没学会如何给它<span class="accent-text">“立规矩”</span></p>
-                    <p class="t-body v-gap-md" style="max-width: 800px; opacity: 0.85;">AI 的天性是“概率对赌”。你给它的指令越模糊，它就越容易开启“随机应付”模式。掌握提示词，本质上是学会如何给这位顶级实习生立规矩、给框架、定标准。</p>
+                    <p class="t-subtitle quote-line v-gap-hero">它不是不好用，只是你还没学会如何给它<span class="accent-text">“立规矩”</span>
+                    </p>
+                    <p class="t-body v-gap-md" style="max-width: 800px; opacity: 0.85;">AI
+                        的天性是“概率对赌”。你给它的指令越模糊，它就越容易开启“随机应付”模式。掌握提示词，本质上是学会如何给这位顶级实习生立规矩、给框架、定标准。</p>
                 </div>
             </div>
         </section>
 
-        <!-- Slide 5: 避坑指南 -->
+        <!-- Slide 5: 认知第一刀 -->
         <section class="slide" id="5">
-            <div class="slide-bg reveal-zoom" style="background-image: url('assets/images/slide_05.png');"></div>
-            <div class="slide-overlay"></div>
-            <div class="slide-content-overlay" style="justify-content: center;">
-                <h1 class="t-hero-page reveal-up delay-1">别把它当百度使</h1>
-                <div class="split-container v-gap-section" style="position: relative;">
+            <div class="slide-bg reveal-zoom" style="background-image: url('assets/images/slide_05_v2.png');"></div>
+            <div class="slide-overlay" style="background: rgba(0,0,0,0.75);"></div>
+            <div class="slide-content-overlay" style="justify-content: center; align-items: center;">
+                <h1 class="t-hero-page reveal-up delay-1" style="font-size: 3.5rem;">别把它当“高配版百度”</h1>
+                <p class="t-subtitle reveal-up delay-2" style="margin-bottom: 5vh; opacity: 0.9;">搜索是<span
+                        style="color:#aaa;">“库内翻旧账”</span>，AI 是<span class="accent-text">“平地起高楼”</span></p>
+
+                <div class="split-container v-gap-section"
+                    style="position: relative; align-items: stretch; max-width: 1100px; margin: 0 auto;">
                     <div class="vs-tag">VS</div>
-                    <div class="bento-card reveal-up delay-2">
-                        <h2 class="t-card-title">传统搜索</h2>
-                        <p class="t-subtitle accent-text">在“找答案”</p>
-                        <p class="t-body">翻旧账、搬运工</p>
+
+                    <!-- Left Side: Traditional Search -->
+                    <div class="bento-card reveal-up delay-2"
+                        style="background: rgba(30, 30, 30, 0.4); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border: 1px solid rgba(255,255,255,0.1); border-top: 6px solid #666; padding: 4rem 3rem; text-align: center;">
+                        <h2 class="t-card-title" style="color: #ccc; margin-bottom: 3.5rem; font-size: 2.2rem;">【传统搜索】
+                        </h2>
+                        <ul
+                            style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 3rem;">
+                            <li>
+                                <span
+                                    style="font-size: 1rem; color: #888; text-transform: uppercase; letter-spacing: 2px; display: block; margin-bottom: 0.8rem;">核心定位</span>
+                                <strong style="color: #fff; font-size: 1.8rem; font-weight: 600;">档案搬运工</strong>
+                            </li>
+                            <li>
+                                <span
+                                    style="font-size: 1rem; color: #888; text-transform: uppercase; letter-spacing: 2px; display: block; margin-bottom: 0.8rem;">运作机制</span>
+                                <strong style="color: #fff; font-size: 1.8rem; font-weight: 600;">检索现成网页库</strong>
+                            </li>
+                            <li>
+                                <span
+                                    style="font-size: 1rem; color: #888; text-transform: uppercase; letter-spacing: 2px; display: block; margin-bottom: 0.8rem;">输入习惯</span>
+                                <strong style="color: #fff; font-size: 1.8rem; font-weight: 600;">丢几个“关键词”</strong>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="bento-card reveal-up delay-3" style="border-color: var(--accent);">
-                        <h2 class="t-card-title">AI 大模型</h2>
-                        <p class="t-subtitle accent-text">在“赌可能”</p>
-                        <p class="t-body">现编现织、生产工具</p>
+
+                    <!-- Right Side: AI Large Model -->
+                    <div class="bento-card reveal-up delay-3"
+                        style="background: rgba(0, 0, 0, 0.6); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border: 1px solid rgba(242, 114, 48, 0.3); border-top: 6px solid var(--accent); padding: 4rem 3rem; text-align: center; box-shadow: 0 10px 40px rgba(242, 114, 48, 0.15);">
+                        <h2 class="t-card-title accent-text" style="margin-bottom: 3.5rem; font-size: 2.2rem;">【大模型建构】
+                        </h2>
+                        <ul
+                            style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 3rem;">
+                            <li>
+                                <span
+                                    style="font-size: 1rem; color: var(--accent); opacity: 0.8; text-transform: uppercase; letter-spacing: 2px; display: block; margin-bottom: 0.8rem;">核心定位</span>
+                                <strong style="color: #fff; font-size: 1.8rem; font-weight: 600;">现场施工队</strong>
+                            </li>
+                            <li>
+                                <span
+                                    style="font-size: 1rem; color: var(--accent); opacity: 0.8; text-transform: uppercase; letter-spacing: 2px; display: block; margin-bottom: 0.8rem;">运作机制</span>
+                                <strong style="color: #fff; font-size: 1.8rem; font-weight: 600;">脑空如纸，临时生成</strong>
+                            </li>
+                            <li>
+                                <span
+                                    style="font-size: 1rem; color: var(--accent); opacity: 0.8; text-transform: uppercase; letter-spacing: 2px; display: block; margin-bottom: 0.8rem;">输入习惯
+                                    <span
+                                        style="background:#ff4444; color:#fff; font-size:0.7rem; padding: 2px 6px; border-radius: 4px; vertical-align: middle; margin-left:5px;">只给关键词=盲猜废话</span></span>
+                                <strong class="accent-text"
+                                    style="font-size: 1.8rem; font-weight: 800;">给详细“施工图纸”</strong>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -154,8 +206,10 @@
         <!-- Slide 6: 其实它就是个“概率盲盒” -->
         <section class="slide" id="6">
             <div class="slide-bg reveal-zoom" style="background-image: url('assets/images/slide_06.png');"></div>
-            <div class="slide-overlay" style="background: radial-gradient(circle, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.95) 100%);"></div>
-            <div class="slide-content-overlay" style="justify-content: center; align-items: center; text-align: center;">
+            <div class="slide-overlay"
+                style="background: radial-gradient(circle, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.95) 100%);"></div>
+            <div class="slide-content-overlay"
+                style="justify-content: center; align-items: center; text-align: center;">
                 <div class="reveal-up delay-1">
                     <h1 class="t-hero-page">它不分对错</h1>
                     <p class="t-hero-impact accent-text v-gap-impact">只管“概率接龙”</p>
